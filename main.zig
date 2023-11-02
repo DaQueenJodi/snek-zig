@@ -1,7 +1,6 @@
 const std = @import("std");
 const c = @import("c.zig");
 
-
 const DEFAULT_WINDOW_WIDTH  = 800;
 const DEFAULT_WINDOW_HEIGHT = 600;
 const CELL_SIZE     = 10;
@@ -18,10 +17,10 @@ const APPLE_TILE_COLOR       = c.RED;
 const SNAKE_HEAD_TILE_COLOR  = c.DARKGREEN;
 const SNAKE_TAIL_TILE_COLORS = [_]c.Color{c.GREEN, c.LIME};
 
-const LEFT_KEYS  = [_]c_int{c.KEY_LEFT,  c.KEY_A, c.KEY_H};
+const LEFT_KEYS  = [_]c_int{c.KEY_LEFT,  c.KEY_A, c.KEY_J};
 const RIGHT_KEYS = [_]c_int{c.KEY_RIGHT, c.KEY_D, c.KEY_L};
-const UP_KEYS    = [_]c_int{c.KEY_UP,    c.KEY_W, c.KEY_K};
-const DOWN_KEYS  = [_]c_int{c.KEY_DOWN,  c.KEY_S, c.KEY_J};
+const UP_KEYS    = [_]c_int{c.KEY_UP,    c.KEY_W, c.KEY_I};
+const DOWN_KEYS  = [_]c_int{c.KEY_DOWN,  c.KEY_S, c.KEY_K};
 
 const NS_PER_FRAME = std.time.ns_per_s / 16;
 
